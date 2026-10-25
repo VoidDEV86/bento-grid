@@ -1,0 +1,202 @@
+body{
+
+font-family: 'DM Sans' , sans-serif;
+font-size: 18px;
+background-color: #f8f8f8;
+}
+h1, h2, h3, h4{
+
+font-weight: 500;
+line-height: 1.1;
+
+}
+p{
+
+line-height: 1.5;
+margin-top: 10px;  
+
+}
+.bento-grid{
+
+display: grid;
+
+grid-template-columns: repeat(4, 1fr);
+ gap: 30px;
+max-width:  1200px;
+margin: 50px auto;
+
+grid-template-rows: auto auto auto;
+
+  grid-template-areas: 
+    "a b b c"
+    "a d e c"
+    "f g h h";
+}
+
+.bento-grid > div{
+
+border-radius: 15px;
+
+padding: 30px;
+
+box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+}
+
+.Social{
+
+grid-area: b;
+color: white;
+background-color: hsl(256, 67%, 59%) ;
+text-align: center;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+/* styl img class:social */
+.Social img{
+width: 150px;
+height: auto;
+}
+ 
+.Create{
+
+grid-area: a;
+
+background-color:  hsl(31, 66%, 93%) ;
+
+color: hsl(0, 0%, 7%);
+
+}
+/* styl img class:Creat */
+.img-Creat{
+
+width: 200px;
+margin-top: 20px;
+
+}
+/* color text class:Create */
+.purple-text{
+
+color: hsl(256,67%,59%);
+font-style: italic;
+}
+.Schedule{
+
+grid-area: c;
+
+  background-color: hsl(254, 88%, 90%);
+  color: hsl(0, 0%, 7%);
+
+}
+/* styl img class:schedule */
+.img-schedule{
+
+width: 100%;
+height: auto;
+margin-top: 20px;
+
+}
+.Manage{
+
+grid-area: d;
+
+  background-color: hsl(0, 0%, 100%); /* سفید */
+  color: hsl(0, 0%, 7%);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+/* styl img class:Manage */
+.img-Manage{
+width: 100%;
+height: auto;
+object-fit: contain;
+margin-top: 15px;
+}
+.Maintain{
+
+grid-area: e;
+  background-color: hsl(39, 100%, 71%);
+  color: hsl(0, 0%, 7%);
+overflow: hidden;
+}
+
+/* styl img class:Maintain */
+.img-Maintain{
+
+width: calc(100% + 60px);
+height: auto;
+margin-bottom: -30px;
+margin-left: -30px;
+
+
+}
+.Write{
+
+grid-area: f;
+
+  background-color: hsl(39, 100%, 71%);
+  color: hsl(0, 0%, 7%);
+
+}
+/* styl img class:Write */
+.img-Write{
+
+width: 200px;
+height: auto;
+margin-top: 20px;
+}
+.faster{
+
+grid-area: g;
+
+  background-color: hsl(0, 0%, 100%); /* سفید */
+  color: hsl(0, 0%, 7%);
+
+}
+/* styl img class:faster */
+.img-faster{
+
+width: 150px;
+height: auto;
+margin-top: 10px;
+
+}
+.Grow{
+
+grid-area: h;
+
+  background-color: hsl(256, 67%, 59%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* styl img class:Grow */
+.img-Grow{
+
+width: 200px;
+height: auto;
+
+}
+@media (max-width: 768px) {
+
+.bento-grid{
+
+grid-template-areas: 
+"b"
+"a"
+"d"
+"c"
+"e"
+"f"
+"g"
+"h"
+;
+
+
+}
+
+}
